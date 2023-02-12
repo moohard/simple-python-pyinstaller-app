@@ -2,7 +2,7 @@ pipeline {
     agent none 
     options {
         skipStagesAfterUnstable()
-    }git 
+    }
     stages {
         stage('Build') { 
             agent {
