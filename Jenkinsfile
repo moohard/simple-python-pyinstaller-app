@@ -28,9 +28,10 @@ pipeline {
                 always {
                     junit 'test-reports/results.xml'
                 }
+                input message:"Lanjutkan ke tahap Deploy?"
             }
         }
-         stage('Deliver') {
+         stage('Deploy') {
             agent any
             environment {
                 VOLUME = '$(pwd)/sources:/src'
