@@ -27,7 +27,7 @@ pipeline {
             post {
                 always {
                     junit 'test-reports/results.xml'
-                    input message: "Lanjutkan ke tahap Deploy?"
+                    input message: "Lanjutkan ke tahap Deploy? (klik Proceed untuk melanjutkan ke tahap deploy)"
                 }
             }
         }
